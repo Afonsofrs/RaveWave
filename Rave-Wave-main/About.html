@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ana Guedes, Afonso Simões, Ana Maceda, Rafael Freitas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte Títulos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <!-- Fonte Texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+
+  <!-- CSS SHAKE -->
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+  <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+  <link href="estilos.css" rel="stylesheet">
+  <title>RaveWave</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand fs-4" href="index.html"><img src="imagens/RAVE WAVE 4.png" alt=""></a>
+      <!-- botão menu -->
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- side bar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- header side bar -->
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="imagens/RAVE WAVE 4.png" alt=""></h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <!-- body side bar -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="Eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Bilhetes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="qr.html">Bilhetes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Histórico de compras</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="quiz.html">Quizzes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Sobre nós</a>
+            </li>
+          </ul>
+          <!-- pesquisa -->
+          <form class="d-flex justify-content-center align-items-center gap-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="container mt-5 pt-5">
+        <header class="text-center mb-5">
+            <h1>BEM-VINDO À RAVEWAVE</h1>
+            <p>O teu portal para bilhetes e informações sobre raves!</p>
+        </header>
+
+        <section class="container border-bottom-custom mb-5 pb-3">
+            <h2>ABOUT US</h2>
+            <p>Bem-vindos ao nosso site dedicado ao mundo das raves! Somos uma equipa de quatro estudantes apaixonados por música eletrônica e tecnologia, empenhados em trazer a melhor experiência para os amantes desta cultura. O nosso site foi desenvolvido no âmbito da cadeira de Laboratórios Multimédia 2, como um projeto inovador e dinâmico para facilitar a compra de bilhetes e a organização de informações sobre raves.</p>
+        </section>
+
+        <section class="container border-bottom-custom mb-5 pb-3">
+            <h2>A NOSSA MISSÃO</h2>
+            <p>O nosso objetivo é proporcionar aos entusiastas das raves uma plataforma confiável e eficiente para adquirir bilhetes e ter acesso a informações atualizadas sobre os eventos mais aguardados. Queremos ser a ponte que te conecta aos momentos mais inesquecíveis da música eletrônica!</p>
+        </section>
+
+        <section class="container py-3">
+          <h3>A nossa equipa</h3>
+          <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+            <div class="col">
+              <div class="card equipa">
+                <img src="imagens/AFONSO.jpeg" class="card-img-top rounded-circle imgcard" alt="...">
+                <div class="card-body crdbd">
+                  <h5 class="card-title">Afonso Simões</h5>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card equipa">
+                <img src="imagens/CAROL.jpeg" class="card-img-top rounded-circle imgcard" alt="...">
+                <div class="card-body crdbd">
+                  <h5 class="card-title">Ana Guedes</h5>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card equipa">
+                <img src="imagens/ANA.PNG" class="card-img-top rounded-circle imgcard" alt="...">
+                <div class="card-body crdbd">
+                  <h5 class="card-title">Ana Maceda</h5>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card equipa">
+                <img src="imagens/RAFA.jpg" class="card-img-top rounded-circle imgcard" alt="...">
+                <div class="card-body crdbd">
+                  <h5 class="card-title">Rafael Freitas</h5>
+                </div>
+                <div class="d-flex justify-content-evenly p-4">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-whatsapp"></i>
+                  <i class="bi bi-envelope"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-3">
+
+        </section>
+    </div>
+    </main>
+     <!-- footer -->
+     <footer>
+      <div class="container text-center text-light">
+        <h3 class="pt-3">RAVEWAVE</h3>
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="m-1">Home</a>
+          </li>
+          <li>
+            <a href="Eventos.html" class="m-1">Eventos</a>
+          </li>
+          <li>
+            <a href="qr.html" class="m-1">Bilhetes</a>
+          </li>
+          <li>
+            <a href="historico.html" class="m-1">Histórico</a>
+          </li>
+          <li>
+            <a href="quiz.html" class="m-1">Quizzes</a>
+          </li>
+          <li>
+            <a href="About.html" class="m-1">Sobre nós</a>
+          </li>
+        </ul>
+        <ul class="icons mb-0 pb-3">
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  </body>
+  
+  
+  </html>

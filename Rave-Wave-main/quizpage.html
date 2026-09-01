@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana Guedes, Afonso Simões, Ana Maceda, Rafael Freitas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte Títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <!-- Fonte Texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+    <!-- CSS SHAKE -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+    <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+    <link href="estilos.css" rel="stylesheet">
+    <title>RaveWave</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand fs-4" href="index.html"><img src="imagens/RAVE WAVE 4.png" alt=""></a>
+            <!-- botão menu -->
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- side bar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- header side bar -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="imagens/RAVE WAVE 4.png" alt="">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- body side bar -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="Eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Bilhetes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="qr.html">Bilhetes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="historico.html">Histórico de compras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="quiz.html">Quizzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="About.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <!-- pesquisa -->
+                    <form class="d-flex justify-content-center align-items-center gap-1" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-light" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="vh-100">
+        <div class="container mt-5 pt-5 mb-0">
+            <h1 class="text-center mb-4">Quiz</h1>
+            <form id="quizForm" onsubmit="calculateScore(event)">
+                <div class="form-group mt-3">
+                    <label for="question1">1. Em que ano foi a primeira edição do Sound Waves?</label>
+                    <select class="form-control" id="question1" required>
+                        <option value="">Selecione</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="question2">2. Qual destes DJs tocou mais vezes no Sound Waves?</label>
+                    <select class="form-control" id="question2" required>
+                        <option value="">Selecione</option>
+                        <option>Nico Moreno</option>
+                        <option>Carlos Manaça</option>
+                        <option>Miss Sheila</option>
+                        <option>Fatima Hajji</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="question3">3. Quem foi o último DJ a tocar no SoundWaves 2022?</label>
+                    <select class="form-control" id="question3" required>
+                        <option value="">Selecione</option>
+                        <option>Ornella</option>
+                        <option>999999999</option>
+                        <option>Basswell</option>
+                        <option>Cristobal Pesce</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="question4">4. Quantos DJs vão estar no SoundWaves 2024?</label>
+                    <select class="form-control" id="question4" required>
+                        <option value="">Selecione</option>
+                        <option>16</option>
+                        <option>20</option>
+                        <option>11</option>
+                        <option>18</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="question4">5. Qual é a nacionalidade dos DJs I Hate Models e Shlømo?</label>
+                    <select class="form-control" id="question5" required>
+                        <option value="">Selecione</option>
+                        <option>Portuguesa</option>
+                        <option>Espanhola</option>
+                        <option>Italiana</option>
+                        <option>Francesa</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-purple btn-block mt-3" id="submitButton">Enviar</button>
+            </form>
+            <div id="result" class="mt-4 text-center"></div>
+        </div>
+        <!--Função calculateScore para calcular a pontuação do quiz e exibir o resultado.
+         Desenvolvido pelo ChatGPT. -->
+        <script>
+            function calculateScore(event) {
+                event.preventDefault();
+
+                const answers = {
+                    question1: '2005',
+                    question2: 'Miss Sheila',
+                    question3: '999999999',
+                    question4: '16',
+                    question5: 'Francesa'
+                };
+
+                let score = 0;
+                for (const question in answers) {
+                    const userAnswer = document.getElementById(question).value;
+                    if (userAnswer === answers[question]) {
+                        score++;
+                    }
+                }
+
+                const resultDiv = document.getElementById('result');
+                const totalQuestions = Object.keys(answers).length;
+
+                if (score === totalQuestions) {
+                    const discountCode = 'DESCONTO5';
+                    resultDiv.innerHTML = `Parabéns! Acertaste as perguntas todas! Usa o código <u><strong>${discountCode}</strong></u> para 5% de desconto.`;
+                } else {
+                    resultDiv.innerHTML = `Você acertou ${score} de ${totalQuestions} perguntas.`;
+                }
+                // Desabilitar campos de seleção e mudar o botão
+                document.querySelectorAll('select').forEach(select => select.disabled = true);
+                const submitButton = document.getElementById('submitButton');
+                submitButton.innerHTML = 'Voltar à Home';
+                submitButton.onclick = function () {
+                    window.location.href = 'index.html';
+                };
+                submitButton.type = 'button';
+            }
+        </script>
+    </main>
+     <!-- footer -->
+     <footer>
+        <div class="container text-center text-light">
+          <h3 class="pt-3">RAVEWAVE</h3>
+          <ul class="menu">
+            <li>
+              <a href="index.html" class="m-1">Home</a>
+            </li>
+            <li>
+              <a href="Eventos.html" class="m-1">Eventos</a>
+            </li>
+            <li>
+              <a href="qr.html" class="m-1">Bilhetes</a>
+            </li>
+            <li>
+              <a href="historico.html" class="m-1">Histórico</a>
+            </li>
+            <li>
+              <a href="quiz.html" class="m-1">Quizzes</a>
+            </li>
+            <li>
+              <a href="About.html" class="m-1">Sobre nós</a>
+            </li>
+          </ul>
+          <ul class="icons mb-0 pb-3">
+            <li>
+              <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-envelope"></i></a>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

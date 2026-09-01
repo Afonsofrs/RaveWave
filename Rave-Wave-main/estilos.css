@@ -1,0 +1,189 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+ body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav {
+    background-color: purple;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    transition: transform 0.5s ease;
+    margin-top: 2rem;
+}
+
+.crdhov:hover {
+    transform: translateY(-20px);
+}
+
+.card-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.card-img-container {
+    text-align: center;
+}
+.card-img-container img {
+    width: 50%; 
+    height: auto;
+}
+
+.border-purple {
+    border: 2px solid purple; 
+}
+
+footer {
+    background-color: purple;
+}
+
+@media (max-width: 768px) {
+    .carousel-item .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: purple;
+    }
+}
+
+.card-img-custom{width: 80%;}
+
+.border-bottom-custom {
+    border-bottom: 2px solid #000;
+}
+
+.btn-purple {
+    background-color: purple;
+    color: white;
+}
+
+.btn-purplebrd{
+    border: 2px solid purple;
+    background-color: white;
+}
+
+.text-purple{
+    color: purple;
+}
+
+.imgcard {
+    width: 80%;
+    top: -80px;
+    position: relative;
+    object-fit: cover;
+    margin: auto;
+}
+
+.equipa {
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.equipa:hover {
+    box-shadow: #635e5e 0px 3px 8px;
+}
+
+.crdbd {
+    margin-top: -50px;
+}
+
+footer .menu li {
+    display: inline-block;
+}
+
+footer .menu a {
+    transition: 0.3s;
+    color: #bfbac1;
+}
+
+footer .menu a:hover {
+    color: white;
+}
+
+footer .icons li {
+    display: inline-block;
+}
+
+.icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px white solid;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: white;
+}
+
+.icons a:hover {
+    background: white;
+    color: #111;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#eventosbtn {
+    background-color: purple;
+    color: white;
+}
+
+
+#eventosbtn:hover {
+    background-color: rgb(195, 42, 195); /* Cor de fundo ao passar o mouse */
+    color: #f8f9fa; /* Cor do texto ao passar o mouse */
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ana Guedes, Afonso Simões, Ana Maceda, Rafael Freitas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte Títulos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <!-- Fonte Texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+
+  <!-- CSS SHAKE -->
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+  <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+  <link href="estilos.css" rel="stylesheet">
+  <title>RaveWave</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand fs-4" href="index.html"><img src="imagens/RAVE WAVE 4.png" alt=""></a>
+      <!-- botão menu -->
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- side bar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- header side bar -->
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="imagens/RAVE WAVE 4.png" alt=""></h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <!-- body side bar -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="Eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Bilhetes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="qr.html">Bilhetes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="historico.html">Histórico de compras</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="quiz.html">Quizzes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="About.html">Sobre nós</a>
+            </li>
+          </ul>
+          <!-- pesquisa -->
+          <form class="d-flex justify-content-center align-items-center gap-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="border-bottom-custom mt-5 pt-5 mb-0 col-11 mx-auto">
+      <h2 class="section-title">Bilhetes</h2>
+    </section>
+
+    <div class="container mb-5 pb-3 d-flex justify-content-center align-items-center vh-75">
+      <div id="QRCarousel" class="carousel slide w-100" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-10">
+                <div class="card text-center bg-dark text-white rounded">
+                  <h5 class="card-title mt-3">SoundWaves 2024</h5>
+                  <div class="d-flex justify-content-center">
+                    <img src="imagens/qr-code-bc94057f452f4806af70fd34540f72ad.png"
+                      class="card-img-custom img-fluid rounded mt-3 w-50" alt="QRCode">
+                  </div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <p>Apresenta este QR code como comprovativo do bilhete </p>
+                      <p>06 jun 2024</p>
+                      <p>Esmoriz-Ovar</p>
+                      <p>Bilhete Normal</p>
+                    </div>
+                  </div>
+                  <div class="card-body mb-5">
+                    <a href="SoundWaves.html" class="btn btn-purple btn-block">Detalhes do Evento</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-10">
+                <div class="card text-center bg-dark text-white rounded">
+                  <h5 class="card-title mt-3">ØRGIE x GATE 13</h5>
+                  <div class="d-flex justify-content-center">
+                    <img src="imagens/qr-code-bc94057f452f4806af70fd34540f72ad.png"
+                      class="card-img-custom img-fluid rounded mt-3 w-50" alt="QRCode">
+                  </div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <p>Apresenta este QR code como comprovativo do bilhete </p>
+                      <p>22 jun 2024</p>
+                      <p>GATE 13-Cambeses</p>
+                      <p>Bilhete VIP</p>
+                    </div>
+                  </div>
+                  <div class="card-body mb-5">
+                    <a href="#" class="btn btn-purple btn-block">Detalhes do Evento</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#QRCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#QRCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+     <!-- footer -->
+     <footer>
+      <div class="container text-center text-light">
+        <h3 class="pt-3">RAVEWAVE</h3>
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="m-1">Home</a>
+          </li>
+          <li>
+            <a href="Eventos.html" class="m-1">Eventos</a>
+          </li>
+          <li>
+            <a href="qr.html" class="m-1">Bilhetes</a>
+          </li>
+          <li>
+            <a href="historico.html" class="m-1">Histórico</a>
+          </li>
+          <li>
+            <a href="quiz.html" class="m-1">Quizzes</a>
+          </li>
+          <li>
+            <a href="About.html" class="m-1">Sobre nós</a>
+          </li>
+        </ul>
+        <ul class="icons mb-0 pb-3">
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

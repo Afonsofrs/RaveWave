@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ana Guedes, Afonso Simões, Ana Maceda, Rafael Freitas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte Títulos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <!-- Fonte Texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+
+  <!-- CSS SHAKE -->
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+  <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+  <link href="estilos.css" rel="stylesheet">
+  <title>RaveWave</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand fs-4" href="index.html"><img src="imagens/RAVE WAVE 4.png" alt=""></a>
+      <!-- botão menu -->
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- side bar -->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- header side bar -->
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="imagens/RAVE WAVE 4.png" alt=""></h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <!-- body side bar -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="Eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Bilhetes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="qr.html">Bilhetes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="historico.html">Histórico de compras</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="quiz.html">Quizzes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="About.html">Sobre nós</a>
+            </li>
+          </ul>
+          <!-- pesquisa -->
+          <form class="d-flex justify-content-center align-items-center gap-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-light" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- o efeito hover n tá a funcionar em alguns botões de like-->
+    <!-- principais -->
+    <div class="container text-center mt-5 mb-0">
+      <h1 class="pt-5 mb-0">EVENTOS PRINCIPAIS</h1>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-75 mb-5">
+      <div id="eventCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/WhatsApp Image 2024-05-27 at 14.17.54 (2).jpeg" class="card-img-top"
+                    alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">NEOPOP</h5>
+                    <a href="SoundWaves.html" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/SOUNDWAVES.jpg" class="card-img-top" alt="Sound Waves 2024">
+                  <div class="card-body">
+                    <h5 class="card-text">SOUND WAVES</h5>
+                    <a href="SoundWaves.html" class="btn btn-light text-dark border border-1 border-dark">
+                      <img src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR
+                    </a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark">
+                      <img src="imagens/icons8-heart-24.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/gate 13 festival.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">GATE 13 FESTIVAL</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/tribute-of-techno.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">TRIBUTE OF TECHNO</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/neptune.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">NEPTUNE 1 YEAR FEST</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/orgie.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">ØRGIE x GATE 13</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- eventos -->
+    <div class="container text-center mt-5 mb-0">
+      <h3 class="mb-0">OUTROS EVENTOS</h3>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-75 pb-0 mb-5">
+      <div id="eventCarousel1" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/NOGENDERXRIKTUS.jpg" class="card-img-top" alt="Sound Waves 2024">
+                  <div class="card-body">
+                    <h5 class="card-text">NOGENDER x RIKTUS</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/hardpoint 3.0.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">HARDPOINT 3.0</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/NYCTONIAN.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">NYCTONIAN x INVDRS</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/Brunch x Indira.jpeg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">BRUNCH x INDIRA PAGANOTTO</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/AUTHENTIC.jpg" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">HARD S.JOÃO AUTHENTIC</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                <div class="card text-center mx-2 crdhov">
+                  <img src="imagens/soundwaveswinter.png" class="card-img-top" alt="Evento Placeholder">
+                  <div class="card-body">
+                    <h5 class="card-text">SOUND WAVES WINTER</h5>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-shopping-cart-24.png" alt=""> COMPRAR</a>
+                    <a href="#" class="btn btn-light text-dark border border-1 border-dark"> <img
+                        src="imagens/icons8-heart-24.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-0 mb-5">
+    <a href="Eventos.html" class="btn btn-purple text-white mb-2" id="eventosbtn">Ver todos os eventos</a>
+    </div>
+
+  </main>
+     <!-- footer -->
+     <footer>
+      <div class="container text-center text-light">
+        <h3 class="pt-3">RAVEWAVE</h3>
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="m-1">Home</a>
+          </li>
+          <li>
+            <a href="Eventos.html" class="m-1">Eventos</a>
+          </li>
+          <li>
+            <a href="qr.html" class="m-1">Bilhetes</a>
+          </li>
+          <li>
+            <a href="historico.html" class="m-1">Histórico</a>
+          </li>
+          <li>
+            <a href="quiz.html" class="m-1">Quizzes</a>
+          </li>
+          <li>
+            <a href="About.html" class="m-1">Sobre nós</a>
+          </li>
+        </ul>
+        <ul class="icons mb-0 pb-3">
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-envelope"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-content-center align-items-center m-1"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
